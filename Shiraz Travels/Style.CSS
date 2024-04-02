@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/pragser-wildsee-3840x2160-lake-italy-europe-4k-20310.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-position: center;
+    font-family: 'Baloo 2', cursive;
+    background-position-y:100px;
+    width:100%;
+    height: auto;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+    align-items: center;
+    flex-wrap: wrap;
+    /* z-index: -1; */
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    margin: 20px 20px;
+    
+    
+}
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    padding: 10px;
+}
+.logo{
+    color: white;
+    font-size: 2.6rem;
+    margin: 22px 20px;
+    position: relative;
+    left: 50px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+}
+input[type="text"]{
+    width: 350px;
+    height: 50px;
+    background-color: rgb(36 36 36);
+    padding: 23px 20px;
+    border-radius: 30px;
+    outline: none;
+    color: white;
+    box-shadow: none;
+    border-color: none;
+    font-size: 1rem;
+    font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    flex-wrap: wrap;
+    position: relative;
+    right: 54px;
+    border:2px solid transparent;
+    
+}
+.logo:hover{
+    background-color: #f7387b;
+    box-shadow: 0 0 10px #ff1867,0 0 20px #ff1867;
+    transition: 1s;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 30px;
+}
+nav ul li a:hover{
+    background-color: cyan;
+    color: black;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    transition: 0.7s;
+    letter-spacing: 1px;
+}
+.material-symbols-outlined{
+        color: #fff ;
+        font-size: 33px;
+        cursor: pointer;
+        display: none;
+    }
+    #click{
+        display: none;
+    }
+    footer{
+        font-size: 1.3rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    /* /* @media(max-width:1800px){
+         input[type="text"]{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 1s ease;
+    }
+    #click:checked ~ input[type="text"]{
+        left: 0%;
+    }
+    } */
+@media(max-width: 1350px){ */
+    nav .menu-btn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top:100px;
+        left: -100%;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 1s ease;
+    }
+    nav ul li{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    nav ul li a{
+        font-size: 2rem;
+        
+    }
+    .material-symbols-outlined{
+        color: #fff;
+        font-size: 35px;
+        display: block;
+        position: relative;
+        right: 34px;
+        
+        
+    }
+    .logo{
+        /* font-size: 10vw; */
+        position: relative;
+        left: 0px;
+    }
+   
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 120px;
+    
+}
+h1{
+    z-index: -1;
+    color: white;
+    font-size: 5vw;
+    font-family: 'Dancing Script', cursive;
+    /* text-indent: 2rem; */
+    /* position: relative;
+    top:100px; */
+    text-align: center;
+    /* display: block; */
+
+}
+@media(max-width: 1000px) {
+    h1{
+        font-size: 7vw;
+    }
+}
+/* @media(max-width: 400px){
+h1{
+        font-size:9vw
+    }
+} */
+.places{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+margin: 20px ;
+padding: 23px 30px;
+
+}
+#naran{
+width: 30%;
+height: 100%;
+
+}
+#murree{
+width: 30%;
+height: 100%;
+
+}
+#skardu{
+width: 30%;
+height: 100%;
+
+}
+.buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+bottom: 44px;
+color: white;
+}
+#pj{
+width: 350px;
+height:75px;
+color: rgb(238, 238, 238);
+background-color: #1e9bff;
+border-radius: 30px;
+cursor: pointer;
+outline: none;
+border:2px solid transparent;
+border-color: none;
+font-size: 33px;
+font-family: 'Baloo 2', cursive;
+}
+#fu{
+color: rgb(250, 250, 250);
+width: 350px;
+height:75px;
+background-color: #ff1867;
+border-radius: 30px;
+font-family: 'Baloo 2', cursive;        outline: none;
+font-size: 30px;
+outline: none;
+border:2px solid transparent;
+cursor: pointer;
+}
+#pj:hover{
+box-shadow: 0 0 10px #1e9bff, 0 0 40px #1e9bff, 0 0 80px #1e9bff;
+color: rgb(0, 0, 0);
+transition: 1s;
+letter-spacing: 2px;
+
+}
+#fu:hover{
+box-shadow: 0 0 10px #ff1867, 0 0 40px #ff1867, 0 0 80px #ff1867;
+color: rgb(0, 0, 0);
+transition: 1s;
+letter-spacing: 2px;
+
+}
+footer{
+/* display: flex; */
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: #111;
+height: auto;
+width: 100vw;
+padding-top: 40px;
+color: #fff;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+;
+}
+@media (max-width:800px) {
+.buttons{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+z-index:-1;
+
+}
+#pj{
+position: relative;
+left: 46px;
+margin: 23px 23px;
+width: 300px;
+height: 75px;
+z-index:-1;
+}
+#fu{
+margin: 23px 23px;
+width: 300px;
+height: 75px;
+z-index:-1;
+}
+
+}
+@media (max-width: 400px) {
+.buttons{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+z-index:-1;
+
+}
+#pj{
+position: relative;
+left: 46px;
+margin: 23px 23px;
+width: 250px;
+height: 75px;
+z-index:-1;
+font-size: 7vw;
+}
+#fu{
+margin: 23px 23px;
+width: 250px;
+height: 75px;
+z-index:-1;
+font-size: 7vw;
+}
+h1{
+font-size: 9vw;
+}
+}
